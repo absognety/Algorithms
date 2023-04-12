@@ -18,3 +18,7 @@ def add_numbers_rf(nums:list) -> int:
     else:
         total = nums[0] + add_numbers_rf(nums[1:])
         return total
+    
+    
+if __name__ == '__main__':
+    print (add_numbers_rf([1,2,3,4,5,6]))
