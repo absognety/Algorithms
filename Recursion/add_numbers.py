@@ -1,5 +1,16 @@
 # Recursive function for Adding numbers in a list
 def add_numbers_rf(nums:list) -> int:
+    """
+    Parameters
+    ----------
+    nums : list
+        Input entries in a list to be added
+
+    Returns
+    -------
+    int
+        Returns total/sum of entries of a given list.
+    """
     if len(nums) == 0:
         return 0
     if len(nums) == 1:

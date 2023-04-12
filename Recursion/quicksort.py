@@ -1,5 +1,16 @@
 # Recursive function for quicksort algorithm
-def quicksort_rf(arr):
+def quicksort_rf(arr:list) -> list:
+    """
+    Parameters
+    ----------
+    arr : list
+        Array to be sorted.
+
+    Returns
+    -------
+    list
+        sorted array.
+    """
     if len(arr) < 2:
         return arr
     else:
