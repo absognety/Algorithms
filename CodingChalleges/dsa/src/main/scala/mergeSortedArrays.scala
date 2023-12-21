@@ -1,10 +1,10 @@
 object mergeSortedArrays {
   def main(args:Array[String]): Unit = {
-    def mergeArrays(arr1: Array[Int],arr2: Array[Int],
-                    n1:Int,n2:Int): List[Int] = {
+    def mergeArrays(arr1: Array[Double],arr2: Array[Double],
+                    n1:Int,n2:Int): List[Double] = {
       var i:Int = 0
       var j:Int = 0
-      var arr3: Array[Int] = Array()
+      var arr3: Array[Double] = Array()
       while (i < n1) {
         arr3 = arr3 :+ arr1(i)
         i += 1
@@ -15,11 +15,11 @@ object mergeSortedArrays {
       }
       arr3.sortWith(_ < _).toList
   }
-  val arr1 = Array(1, 2, 3, 5, 7, 23, 50, 1000)
+  val arr1 = Array(1, 2, 3, 5, 7, 23, 50, 1000, 1000.564)
   val n1 = arr1.length
   println (n1)
 
-  val arr2 = Array(2, 4, 6, 8, 10,-34,-1000)
+  val arr2 = Array(2, 4, 6, 8, 10,-34,-1000,-3.4565)
   val n2 = arr2.length
   println (n2)
 
