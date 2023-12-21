@@ -1,0 +1,27 @@
+object mergeSortedArrays {
+  def main(args:Array[String]): Unit = {
+    def mergeArrays(arr1: Array[Int],arr2: Array[Int],
+                    n1:Int,n2:Int): List[Int] = {
+      var i:Int = 0
+      var j:Int = 0
+      var arr3: Array[Int] = Array()
+      while (i < n1) {
+        arr3 = arr3 :+ arr1(i)
+        i += 1
+      }
+      while(j < n2){   
+        arr3 = arr3 :+ arr2(j) 
+        j += 1
+      }
+      arr3.sortWith(_ < _).toList
+  }
+  val arr1 = Array(1, 2, 3, 5, 7, 23, 50, 1000)
+  val n1 = arr1.length
+
+  val arr2 = Array(2, 4, 6, 8, 10)
+  val n2 = arr2.length
+
+  val result = mergeArrays(arr1,arr2,n1,n2)
+  println(s"Array after merging is $result")
+  }
+}
