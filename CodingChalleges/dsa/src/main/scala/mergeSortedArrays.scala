@@ -17,9 +17,11 @@ object mergeSortedArrays {
   }
   val arr1 = Array(1, 2, 3, 5, 7, 23, 50, 1000)
   val n1 = arr1.length
+  println (n1)
 
-  val arr2 = Array(2, 4, 6, 8, 10)
+  val arr2 = Array(2, 4, 6, 8, 10,-34,-1000)
   val n2 = arr2.length
+  println (n2)
 
   val result = mergeArrays(arr1,arr2,n1,n2)
   println(s"Array after merging is $result")
