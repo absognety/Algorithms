@@ -15,6 +15,17 @@ object mergeSortedArrays {
       }
       arr3.sortWith(_ < _).toList
   }
+  /* 
+  Find the Median of sorted array in Scala
+  */
+    def getMedian(sortedArr: List[Double]): Double = {
+      val middleIndex = sortedArr.length / 2
+      if (sortedArr.length % 2 == 0) {
+        (sortedArr(middleIndex - 1) + sortedArr(middleIndex)) / 2.0
+      } else {
+        sortedArr(middleIndex)
+      }
+  }
   val arr1 = Array(1, 2, 3, 5, 7, 23, 50, 1000, 1000.564)
   val n1 = arr1.length
   println (n1)
@@ -25,5 +36,7 @@ object mergeSortedArrays {
 
   val result = mergeArrays(arr1,arr2,n1,n2)
   println(s"Array after merging is $result")
+  val medianValue = getMedian(result)
+  println(s"Computed median is $medianValue")
   }
 }
