@@ -1,5 +1,8 @@
 object mergeSortedArrays {
   def main(args:Array[String]): Unit = {
+    /* 
+     Merge Two arrays and sort them
+    */
     def mergeArrays(arr1: Array[Double],arr2: Array[Double],
                     n1:Int,n2:Int): List[Double] = {
       var i:Int = 0
