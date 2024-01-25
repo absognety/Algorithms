@@ -1,3 +1,8 @@
+def prepareMatrix(size):
+    matrix = [[-1 for i in range(size)] 
+              for j in range(size)]
+    return matrix
+
 def isPalindrome(S:str,i:int,j:int) -> int:
     if i > j:
         return 1
@@ -22,6 +27,5 @@ if __name__ == '__main__':
     T = int(input())
     for tc in range(T):
         S = input().strip()
-        matrix = [[-1 for i in range(1001)] 
-                        for j in range(1001)]
+        matrix = prepareMatrix(1001)
         print (numMaxPalindromicSequences(S))
