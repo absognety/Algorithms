@@ -1,3 +1,5 @@
+#----------Algorithm for API rate limiting - Token Bucket Algorithm-----------------#
+
 import time
 
 def getCurrentTimeInNanoseconds() -> int:
